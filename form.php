@@ -1,6 +1,6 @@
 <?php
 
-    require_once('connection.php');
+    require_once('./connection.php');
 
     if(isset($_POST['submit'])) {
         if(empty($_POST['name']) || empty($_POST['email']) || empty($_POST['age'])) {
@@ -11,7 +11,7 @@
             $UserEmail = $_POST['email'];
             $UserAge = $_POST['age'];
 
-            $query = "insert into records (User_Name, User_Email, User_Age) values('$UserName','$UserEmail','$UserAge')"
+            $query = "insert into records (User_Name, User_Email, User_Age) values('$UserName','$UserEmail','$UserAge')";
             $result = mysqli_query($con, $query);
 
             if($result) {
@@ -23,7 +23,7 @@
         }
     }
     else {
-        header('location:index.php');
+        header('location:index.html');
     }
 
 ?>

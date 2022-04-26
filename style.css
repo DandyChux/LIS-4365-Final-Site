@@ -1,1 +1,71 @@
+:root {
+    --title-color: #5a2459;
+    --highlight-orange: #e78424;
+}
 
+.navbar {
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: beige;
+    border-bottom: 0.25px solid black;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--title-color);
+}
+
+.navbar a:hover {
+    color: var(--highlight-orange);
+}
+
+#hero-section {
+    width: 100vw;
+    background-color: var(--title-color);
+    opacity: 0.55;
+    color: white;
+    text-align: center;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#hero-section h1 {
+    font-size: 5rem;
+}
+
+#hero-section h4 {
+    font-size: 2rem;
+}
+
+#about-section {
+    display: flex;
+    margin-bottom: 5rem;
+}
+
+.aboutCard {
+    flex: 1 1 33.3%;
+    text-align: center;
+    background-color: beige;
+    border: 0.5px solid black;
+    width: 33.3%;
+}
+
+#signup-section {
+    align-items: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: black;
+}
+
+#volunteerForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#volunteerForm > * {
+    border-color: var(--highlight-orange);
+}

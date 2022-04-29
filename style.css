@@ -20,7 +20,7 @@
 }
 
 #hero-section {
-    width: 100vw;
+    width: 100%;
     background-color: var(--title-color);
     opacity: 0.55;
     color: white;
@@ -50,6 +50,10 @@
     background-color: beige;
     border: 0.5px solid black;
     width: 33.3%;
+}
+
+.aboutCard img {
+    width: auto;
 }
 
 #signup-section {
